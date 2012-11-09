@@ -1,0 +1,12 @@
+#ifndef CTCPCLIENT_GLOBAL_H
+#define CTCPCLIENT_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CTCPCLIENT_LIBRARY)
+#  define CTCPCLIENTSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define CTCPCLIENTSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CTCPCLIENT_GLOBAL_H
