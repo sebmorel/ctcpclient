@@ -1,0 +1,10 @@
+# Ignorer les dossiers de compilation.
+debug/
+release/
+
+# Ignorer les fichiers de compilation / projet
+*.pro.user
+Makefile
+Makefile.Debug
+Makefile.Realease
+

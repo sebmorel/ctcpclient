@@ -9,7 +9,12 @@ QT       += network
 QT       -= gui
 
 CONFIG(debug, debug|release){
+linux {
+    TARGET = debug/ctcpclientd
+}
+windows {
     TARGET = ctcpclientd
+}
     LIBS += -L../configparser/debug -lconfigparserd \
             -L../GlobalesFonctions/debug -lGlobalesFonctionsd
 }
